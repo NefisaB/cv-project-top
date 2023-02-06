@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App > button{
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 15px;
+}
+
+
+.main-edit, .main-preview {
+    width: 60%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 15px auto;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+legend, .list-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+legend, input, label, button, textarea {
+    margin-left: 2rem;
+}
+
+section {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+input {
+    line-height: 150%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #777777;
+    text-indent: 3px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #99bea7ae;
+}
+
+textarea {
+    text-indent: 3px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button {
+    width: 100px;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', sans-serif;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 4px 2px 6px 4px #777777;
+}
+
+button:hover {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 4px 0px 4px 4px #777777;
+}
+
+.list {
+    margin-left: 32px;
+}
+
+.list > h2{
+    margin-bottom: 5px;
+}
+
+.edit-btn, .delete-btn {
+    width: 50px;
+}
+
+.edit-btn{
+    margin-left: 0px;
+    margin: 10px auto;
+}
+
+.delete-btn{
+    box-shadow: 4px 2px 6px 4px #d22828;
+}
+
+.delete-btn:active {
+    box-shadow: 4px 0px 6px 4px #d22828;
+}
+.main-preview {
+    padding: 20px;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 8px 5px #777777;
+    background-image: url("../public/images/panda.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 250px;
+}
+
+
+.main-preview > section {
+    border: none;
+}
+
+.main-preview h1 {
+    font-family: 'PlayFair Display',sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.main-preview h2 {
+    font-family: 'PlayFair Display', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
